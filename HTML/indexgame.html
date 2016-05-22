@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Javascript</title>
+    <link rel="stylesheet" href="../Css/stylesgame.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="map">
+    <div class="row">
+     <div class="col-ms-2"></div>
+        <div class="col-ms-2"></div>
+        <div class="col-ms-2"></div>
+        <div class="col-ms-2"></div>
+        <div class="col-ms-2"></div>
+    </div>
+<!-- contient la map du jeu -->
+</div>
+<div class="joueur-un">
+<button id="defense">je choisi la défense</button>
+<button id="attaque">à l'attaque !!!!</button>
+</div>
+<div class="joueur-deux">
+    <button id="defense2"> je choisi la défense </button>
+    <button id="attaque2"> A l'attaque !!!</button>
+</div>
+<div>
+    <!-- box pour le retour sur les événements -->
+</div>
+<aside>
+    <h1>Les règles du jeu </h1>
+    <p>
+        <em>Un tour pour chaque joueur</em>, votre objectif : récupérer la
+        meilleure arme pour défaire votre adversaire.
+        Chaque joueur possède une arme de base , mais à la possibilité
+        de récupérer une des quatres armes disposées sur la map.
+        A chaque tour le joueur  à la possibilité d'effectuer un à trois déplacements
+        en utilisant <em>les flèches du clavier </em>.
+        un fois les deux joueurs à coté l'un de l'autre un combat à mort
+        s'engage.
+
+    </p>
+</aside>
+<script src="../gamejs/JS/jsgames.js"></script>
+</body>
+</html>
