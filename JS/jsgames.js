@@ -20,12 +20,40 @@
  - si deux joueurs sur case adjacente = attaque et combat à mort.
 
  */
+// carte
 var map={
     init: function(Caccessible,Cinaccessible){
-        this.Caccessible
-        this.Cinccecssible
+        this.Caccessible= true ;
+        this.Cinccecssible= false;
     },
+    if 
+};
+// arme
+var weappon = {
+    init: function (weapon, degats, positionarmeX, positionarmeY, imgarms) {
+        this.weappon = "";
+        this.degats = "";
+        this.positionarmeX;
+        this.positionarmeY;
+        this.imgarms;
+},
+    decrire = function(){
+    var description= this.arme + "fait "+ this.degats+ "degats.";
+    return description;
+
 }
+};
+var weappon1 = Object.create(weappon);
+weappon1.weappon=(epee,30,//imgarms);
+var weappon2 = Object.create(weappon);
+weappon2.weappon=(masse,40,//imgarms);
+var weappon3= Object.create(weappon);
+weappon3.weappon= (arc,50,//imgarms);
+var weappon4 = Object.create(weappon);
+weappon4.weappon= (dague,45,//imgarms);
+
+
+// personnage
 var Personnage = {
     init: function (nom,life,defense,attaque,arme,postionX,positionY) {
         this.nom = "";
@@ -38,15 +66,16 @@ var Personnage = {
     },
     this.modedefense = function (one){
     this.defense=true;
-},
+}
     this.modeattaque= function(){
 this.defense=true;
-},
+}
     decrire = function(){
     var description = this.name + " a " + this.life + " points de vie, ";
     return description;
 }
 };
+
 
 var gamer1 = Object.create(Personnage);
 perso1.nom = prompt('entrer le nom de votre personnage');
@@ -57,4 +86,24 @@ perso2.nom = prompt('entrer le nom de votre personnage');
 var boutongamer1= document.getElementById('defense');
 boutongamer1.addEventListener('click', gamer1.modedefense);
 
-function seteventlistner()
+// gestion du game
+function seteventlistner();
+
+
+// keydown qui va gerer les déplacements des joueurs ( objects pour gerer j1 et J2)
+// penser à faire un retour pour avoir information qui s'affiche dans la console du la page
+// results.innerHTML pour renvoyer les resutlats dans la box controlArray
+
+/* myDiv.addEventListener('keypress', function(e) {
+
+ var relatedTarget = e.relatedTarget;
+
+ while (relatedTarget != myDiv && relatedTarget.nodeName != 'BODY' && relatedTarget != document) {
+ relatedTarget = relatedTarget.parentNode;
+ }
+
+ if (relatedTarget != myDiv) {
+ results.innerHTML += "//position du joueur";
+ }
+
+ });*/

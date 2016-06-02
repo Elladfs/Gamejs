@@ -17,27 +17,7 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="map">
-    <div class="row">
-     <div class="col-ms-2"></div>
-        <div class="col-ms-2"></div>
-        <div class="col-ms-2"></div>
-        <div class="col-ms-2"></div>
-        <div class="col-ms-2"></div>
-    </div>
-<!-- contient la map du jeu -->
-</div>
-<div class="joueur-un">
-<button id="defense">je choisi la défense</button>
-<button id="attaque">à l'attaque !!!!</button>
-</div>
-<div class="joueur-deux">
-    <button id="defense2"> je choisi la défense </button>
-    <button id="attaque2"> A l'attaque !!!</button>
-</div>
-<div>
-    <!-- box pour le retour sur les événements -->
-</div>
+<h1>Le jeu de combat du siècle </h1>
 <aside>
     <h1>Les règles du jeu </h1>
     <p>
@@ -52,6 +32,58 @@
 
     </p>
 </aside>
+<div id="map">
+<table class="Map">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="grise"></td>
+    </tr>
+    <tr>
+        <td class="grise"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td class="grise"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="grise"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="grise"></td>
+    </tr>
+
+</table>
+<!-- contient la map du jeu -->
+</div>
+<div class="joueur-un">
+<button id="defense">je choisi la défense</button>
+<button id="attaque">à l'attaque !!!!</button>
+</div>
+<div class="joueur-deux">
+    <button id="defense2"> je choisi la défense </button>
+    <button id="attaque2"> A l'attaque !!!</button>
+</div>
+<div class="controlarray">
+    <!-- box pour le retour sur les événements -->
+</div>
 <script src="../gamejs/JS/jsgames.js"></script>
 </body>
 </html>
