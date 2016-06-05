@@ -21,12 +21,62 @@
 
  */
 // carte
-var map={
-    init: function(Caccessible,Cinaccessible){
-        this.Caccessible= true ;
-        this.Cinccecssible= false;
-    },
-    if 
+var map = {
+    init: function (Caccessible, Cinaccessible, table) {
+        this.Caccessible = true;
+        this.Cinaccecssible = grise;
+        this.getElementbyTagName("table");
+    };
+if (Cin) {
+
+}else
+}
+var cellule = getElementByTag("td");
+if (cellule = getElementsByClassName("grise"){
+    alert("mouvement impossible, sur les cases grises");
+}
+else if (cellule != getElementByName("table")) {
+    alert("vous êtes en dehors de la map , déplacement impossible");
+
+} else {
+    // fonction mouvment
+    move
+}
+// gestion du mouvement
+var move = {
+    init: function (axeX, AxeY) {
+        this.axeX =
+    }
+};
+
+var table = document.getElementsByClassName(Map);
+var tableArr = [];
+{
+    for (var i = 1, i≤10, i++){
+        // table.rows[i].cell[0].innerHTML,
+        for (var j = 1, j<10, j++){
+            if (table.rows[i].cell[j].className = "grise") {
+                table.rows[i].cell[j].innerHTML = 0
+            } else {
+                table.rows[i].cell[j].innerHTML = 1
+            };
+        
+        }
+
+    };
+
+};
+
+
+getElementsByClassName("grise");
+// gestion du déplacement
+
+// gestion des touches pour le déplacement des gamers
+document.addEventListener("keypress", function (e))
+{
+    if (e.keyCode == 40) {
+        Personnage
+    }
 };
 // arme
 var weappon = {
@@ -36,60 +86,64 @@ var weappon = {
         this.positionarmeX;
         this.positionarmeY;
         this.imgarms;
-},
-    decrire = function(){
-    var description= this.arme + "fait "+ this.degats+ "degats.";
+    },
+    decrire = function () {
+    var description = this.arme + "fait " + this.degats + "degats.";
     return description;
 
-}
 };
-var weappon1 = Object.create(weappon);
-weappon1.weappon=(epee,30,//imgarms);
-var weappon2 = Object.create(weappon);
-weappon2.weappon=(masse,40,//imgarms);
-var weappon3= Object.create(weappon);
-weappon3.weappon= (arc,50,//imgarms);
-var weappon4 = Object.create(weappon);
-weappon4.weappon= (dague,45,//imgarms);
+}
+var epee = Object.create(weappon);
+epee.weappon = (epee, 30,//imgarms);
+var masse = Object.create(weappon);
+masse.weappon = (masse, 40,//imgarms);
+var arc = Object.create(weappon);
+arc.weappon = (arc, 50,//imgarms);
+var dague = Object.create(weappon);
+dague.weappon = (dague, 45,//imgarms);
 
 
 // personnage
 var Personnage = {
-    init: function (nom,life,defense,attaque,arme,postionX,positionY) {
+    init: function (nom, life, defense, attaque, arme, postionX, positionY) {
         this.nom = "";
         this.life = 100;
         this.defense = false;
         this.attaque = false;
         this.arme = degat;
-        this.positionX = "";
-        this.positionY = "";
+        this.positionX =;
+        this.positionY =;
     },
-    this.modedefense = function (one){
-    this.defense=true;
-}
-    this.modeattaque= function(){
-this.defense=true;
-}
-    decrire = function(){
+    this.modedefense = function (one) {
+    this.defense = true;
+};
+this.modeattaque = function () {
+    this.defense = true;
+};
+decrire = function () {
     var description = this.name + " a " + this.life + " points de vie, ";
     return description;
-}
 };
-
-
+}
 var gamer1 = Object.create(Personnage);
 perso1.nom = prompt('entrer le nom de votre personnage');
 
 var gamer2 = Object.create(Personnage);
 perso2.nom = prompt('entrer le nom de votre personnage');
 
-var boutongamer1= document.getElementById('defense');
+var boutongamer1 = document.getElementById('defense');
 boutongamer1.addEventListener('click', gamer1.modedefense);
 
 // gestion du game
-function seteventlistner();
+function seteventlistner()
 
-
+// gestion des touches pour le déplacement des gamers
+document.addEventListener("keypress", function (e))
+{
+    if (e.keyCode == 40) {
+        Personnage
+    }
+};
 // keydown qui va gerer les déplacements des joueurs ( objects pour gerer j1 et J2)
 // penser à faire un retour pour avoir information qui s'affiche dans la console du la page
 // results.innerHTML pour renvoyer les resutlats dans la box controlArray
@@ -105,5 +159,3 @@ function seteventlistner();
  if (relatedTarget != myDiv) {
  results.innerHTML += "//position du joueur";
  }
-
- });*/
