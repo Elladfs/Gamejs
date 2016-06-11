@@ -19,12 +19,6 @@ tr
 text-align: center;
 }
 
-.controlarray
-{
-    height: 250px;
-    width: auto;
-    border: #0c0c0c double 5px;
-}
 .grise{
     background-color: gray;
 }

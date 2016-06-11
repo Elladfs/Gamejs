@@ -72,7 +72,7 @@ table.rows[lignePersonnage].cell[cellPersonnage]
     table.rows[lignePersonnage +1].cell[cellPersonnage]
 // gestion de l'accessibilité de la case
 
-function (moveup){
+function MoveUp (){
     if (table.rows[lignePersonnage +1].cell[cellPersonnage].className = "grise" ||table.rows[lignePersonnage +1].cell[cellPersonnage] == null) {
         alert("Mouvement impossible");
     } else {
@@ -80,7 +80,7 @@ function (moveup){
             table.rows[lignePersonnage+1].cell.innerHTML('O')
     };
 }
-function(movedown){
+function Mouvedown (){
     if (table.rows[lignePersonnage +1].cell[cellPersonnage].className = "grise" ||table.rows[lignePersonnage +1].cell[cellPersonnage] == null) {
         alert("Mouvement impossible");
     } else {
@@ -88,7 +88,7 @@ function(movedown){
             table.rows.cell[cellPersonnage+1].innerHTML('O')
     };
 }
-function (moveleft) {
+function Moveleft () {
     if (table.rows[lignePersonnage +1].cell[cellPersonnage].className = "grise" ||table.rows[lignePersonnage +1].cell[cellPersonnage] == null) {
         alert("Mouvement impossible");
     } else {
@@ -96,7 +96,9 @@ function (moveleft) {
             table.rows[lignePersonnage-1].cell.innerHTML('O')
     };
 }
-function (moveright) {
+function Moveright() {
+    
+}(moveright) {
     if (table.rows[lignePersonnage +1].cell[cellPersonnage].className = "grise" ||table.rows[lignePersonnage +1].cell[cellPersonnage] == null) {
         alert("Mouvement impossible");
     } else {
