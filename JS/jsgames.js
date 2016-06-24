@@ -67,11 +67,6 @@ decrire = function () {
     return description;
 };
 }
-var gamer1 = Object.create(Personnage);
-perso1.nom = prompt('entrer le nom de votre personnage');
-
-var gamer2 = Object.create(Personnage);
-perso2.nom = prompt('entrer le nom de votre personnage');
 
 var boutongamer1 = document.getElementById('defense');
 boutongamer1.addEventListener('click', gamer1.modedefense);

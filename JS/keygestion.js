@@ -97,12 +97,10 @@ function Moveleft () {
     };
 }
 function Moveright() {
-    
-}(moveright) {
     if (table.rows[lignePersonnage +1].cell[cellPersonnage].className = "grise" ||table.rows[lignePersonnage +1].cell[cellPersonnage] == null) {
         alert("Mouvement impossible");
     } else {
         table.rows[lignePersonnage].cell[cellPersonnage].innerHTML('X'),
-            table.rows[lignePersonnage].cell[cellPersonnage-1].innerHTML('O')
+            table.rows[lignePersonnage].cell[a-1].innerHTML('O')
     };
 }
