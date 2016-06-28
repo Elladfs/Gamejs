@@ -43,7 +43,7 @@ function keyEvent(event) {
                 table.rows[lignePersonnage].cell[a-1].innerHTML('O')
         };
     if (var keychar == 65){
-            //attaque
+            //attaque`
         }
     if (var keychar == 68){
             //attaque
